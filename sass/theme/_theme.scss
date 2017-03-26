@@ -1,0 +1,35 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Navigation
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+#navbarSide .menu-item {
+    float: none;
+    display: block;
+}
+
+.split-menu-row{
+	width: 100%;
+}
+
+.split-menu-row{
+
+	#main-menu-left{
+		float: right;
+	}
+
+	#main-menu-right{
+		float: left;
+	}
+
+}
+
