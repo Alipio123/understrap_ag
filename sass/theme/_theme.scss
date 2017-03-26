@@ -12,10 +12,17 @@
 # Navigation
 --------------------------------------------------------------*/
 
-#navbarSide .menu-item {
-    float: none;
-    display: block;
+#navbarSide{
+	.menu-item{
+	    float: none;
+	    display: block;
+	}
+
+	.nav{
+		display: block;
+	}
 }
+
 
 .split-menu-row{
 	width: 100%;
