@@ -9222,6 +9222,9 @@ h1.navbar-brand a:hover {
   float: none;
   display: block; }
 
+#navbarSide .nav {
+  display: block; }
+
 .split-menu-row {
   width: 100%; }
 

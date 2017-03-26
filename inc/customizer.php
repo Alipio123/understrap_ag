@@ -78,6 +78,25 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 		    ),
 		));
 
+		//Theme Page Header Title setting
+		$wp_customize->add_setting('understrap_page_header_title_setting', array(
+		    'default'        => 'page-header-title-enable',
+		    'type'           => 'theme_mod',
+			'sanitize_callback' => 'esc_textarea',
+		    'capability'     => 'edit_theme_options',
+		));
+
+		$wp_customize->add_control('understrap_theme_page_header_options', array(
+		    'label'      => __('Page Header Title Visibility', 'understrap'),
+		    'section'    => 'understrap_theme_header_options',
+		    'settings'   => 'understrap_page_header_title_setting',
+		    'type'       => 'radio',
+		    'choices'    => array(
+		    	'page-header-title-enable' => 'Show',
+		        'page-header-title-disable' => 'Hide'
+		    ),
+		));
+
 		// Theme layout settings.
 		$wp_customize->add_section( 'understrap_theme_layout_options', array(
 			'title'       => __( 'Theme Layout Settings', 'understrap' ),
