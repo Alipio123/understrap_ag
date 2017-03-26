@@ -28,7 +28,7 @@
 <div id="body_canvas" class="hfeed site canvas-slid" id="page">
 
 	<!-- ******************* The Topbar Area ******************* -->
-	<?php if( $topbar_status == "topbar-enable" ){ ?>
+	<?php if( $topbar_status == "topbar-enable" || empty($topbar_status) ){ ?>
 		<div class="topbar">
 			<?php if ( 'container' == $container ) : ?>
 				<div class="container">

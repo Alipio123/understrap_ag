@@ -64,7 +64,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			) );
 		}
 
-		if( $topbar_status == "topbar-enable" ){
+		if( $topbar_status == "topbar-enable" || empty($topbar_status) ){
 			register_sidebar( array(
 				'name'          => __( 'Top Bar Left', 'understrap' ),
 				'id'            => 'topbar-left',
