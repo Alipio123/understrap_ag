@@ -6,16 +6,17 @@
  *
  * @package understrap
  */
-
+$page_title_header_visibility = get_theme_mod( 'understrap_page_header_title_setting' );
 ?>
 
 <section class="no-results not-found">
+	<?php if( $page_title_header_visibility =="page-header-title-enable" || empty($page_title_header_visibility) ){ ?>
+		<header class="page-header">
 
-	<header class="page-header">
+			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'understrap' ); ?></h1>
 
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'understrap' ); ?></h1>
-
-	</header><!-- .page-header -->
+		</header><!-- .page-header -->
+	<?php } ?>
 
 	<div class="page-content">
 

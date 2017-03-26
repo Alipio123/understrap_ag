@@ -4,7 +4,7 @@
  *
  * @package understrap
  */
-
+$page_title_header_visibility = get_theme_mod( 'understrap_page_header_title_setting' );
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
